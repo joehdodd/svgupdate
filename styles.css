@@ -1,0 +1,182 @@
+/*===============
+      GLOBALS
+================*/
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+/*===============
+      HEADER
+================*/
+
+.navLinks {
+  transition: transform .5s;
+}
+  .navLinks:hover, a:hover {
+    transform: scale(1.15) rotate(5deg);
+    transform-origin: 50% 50%;
+    color: #111;
+  }
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  span:first-of-type {
+    margin-left: 8px;
+  }
+
+  header h1 {
+    line-height: 1em;
+  }
+
+  .corgiHeadline {
+    opacity: 0;
+  }
+
+/*===============
+      MAIN
+================*/
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+      main li svg {
+        margin-bottom: 15px;
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+/*===============
+      FOOTER
+================*/
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/*===============
+    SVG STYLES
+================*/
+
+/* NAV SVG */
+
+header nav li svg path {
+  fill: #39add1;
+}
+
+header nav li:hover svg path {
+  fill: #111;
+}
+
+/* LOGO */
+
+.lo0 {fill:#BA8058;}
+.lo1 {fill:#EAAA7F;}
+.lo2 {fill:#F4C6A6;}
+
+/* CORGIS */
+
+.corgi {
+  overflow: visible;
+  transition: transform .5s;
+}
+
+.corgi:hover {
+  transform: scale(1.25);
+}
+
+/* RED */
+
+.red0 {fill:#BA8058;}
+.red1 {fill:#FBFEFF;}
+.red2 {fill:#2D3339;}
+.red3 {fill:#EAAA7F;}
+
+/* FAWN */
+
+.f0 {fill:#EAAA7F;}
+.f1 {fill:#FBFEFF;}
+.f2 {fill:#2D3339;}
+.f3 {fill:#F4C6A6;}
+
+/* SABLE */
+
+.sa0 {fill:#844B24;}
+.sa1 {fill:#FBFEFF;}
+.sa2 {fill:#2D3339;}
+.sa3 {fill:#BA8058;}
+
+/* BLACK & TAN */
+
+.bt0 {fill:#BA8058;}
+.bt1 {fill:#52595F;}
+.bt2 {fill:#FBFEFF;}
+.bt3 {fill:#2D3339;}
+
+/*===============
+  MEDIA QUERIES
+================*/
+
+@media screen and (max-width: 424px) {
+
+    .corgiHeadline {
+      opacity: 1;
+    }
+
+    .logoText {
+      opacity: 0;
+    }
+}
